@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment - Hospital</title>
+  <link rel="stylesheet" href="book.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="images/logo.png" alt="3rd Empire Medicals Logo" height="60"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a class="active" href="book.html" class="btn">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="appointment-section">
+    <h1>Book an Appointment</h1>
+    <form id="appointmentForm" class="appointment-form">
+      <input type="text" name="fullName" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="date" name="date" required />
+      <select name="department" required>
+        <option value="">Select Department</option>
+        <option value="general">General Consultation</option>
+        <option value="pediatrics">Pediatrics</option>
+        <option value="emergency">Emergency</option>
+        <option value="surgery">Surgery</option>
+      </select>
+      <button type="submit">Submit Appointment</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2035 3rd Empire medicals. All rights reserved.</p>
+    <a href="#">Privacy Policy</a>
+  </footer>
+
+  <script src="book.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url("images/background\ pics.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav .btn:hover {
+  color: 007BFF;
+}
+
+nav a.active,
+nav a:hover {
+  color: blue;}
+
+nav .btn {
+  
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 80vh;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+}
+
+.hero-text button {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #16a34a;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.0);
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+footer a {
+  color: #9eeaf9;
+  text-decoration: underline;
+  margin-left: 1rem;
+}
+
+.btn-link {
+  display: inline-block;
+  background-color: #22c55e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+.btn-link:hover {
+  background-color: #16a34a;
+}
